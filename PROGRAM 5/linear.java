@@ -2,26 +2,26 @@ import java.util.Scanner;
 
 class Linear{
     public static void main(String args[]){
-        int a,i,e;
+        int limit,key,i;
         boolean found=false;
         Scanner sc=new Scanner(System.in);
 
         System.out.print("Enter the number of element in array : ");
-        a=sc.nextInt();
+        limit=sc.nextInt();
 
-        int[] ar=new int[a];
+        int arr[]=new int[limit];
 
         System.out.println("Enter the elements of the array : ");
-        for(i=0;i<a;i++){
-            ar[i]=sc.nextInt();
+        for(i=0;i<limit;i++){
+            arr[i]=sc.nextInt();
         }
 
 
         System.out.print("Enter the element to be searched : ");
-        e=sc.nextInt();
+        key=sc.nextInt();
 
-        for(i=0;i<a;i++){
-            if(ar[i]==e){
+        for(i=0;i<limit;i++){
+            if(arr[i]==key){
                 found=true;
                 break;
             }
