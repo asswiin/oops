@@ -9,11 +9,11 @@ class Linear{
         System.out.print("Enter the number of element in array : ");
         limit=sc.nextInt();
 
-        int arr[]=new int[limit];
+        int array[]=new int[limit];
 
         System.out.println("Enter the elements of the array : ");
         for(i=0;i<limit;i++){
-            arr[i]=sc.nextInt();
+            array[i]=sc.nextInt();
         }
 
 
@@ -21,7 +21,7 @@ class Linear{
         key=sc.nextInt();
 
         for(i=0;i<limit;i++){
-            if(arr[i]==key){
+            if(array[i]==key){
                 found=true;
                 break;
             }
