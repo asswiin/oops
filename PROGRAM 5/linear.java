@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 class Linear{
-    public static void main(String args[]){
+    public static void main(String args[])
+    {
         int limit,key,i;
         boolean found=false;
         Scanner sc=new Scanner(System.in);
@@ -12,7 +13,8 @@ class Linear{
         int array[]=new int[limit];
 
         System.out.println("Enter the elements of the array : ");
-        for(i=0;i<limit;i++){
+        for(i=0;i<limit;i++)
+        {
             array[i]=sc.nextInt();
         }
 
@@ -20,13 +22,16 @@ class Linear{
         System.out.print("Enter the element to be searched : ");
         key=sc.nextInt();
 
-        for(i=0;i<limit;i++){
-            if(array[i]==key){
+        for(i=0;i<limit;i++)
+        {
+            if(array[i]==key)
+            {
                 found=true;
                 break;
             }
         }
-         if(found){
+         if(found)
+         {
             System.out.println("Element is found");
          }else{
             System.out.println("Element is not found");
