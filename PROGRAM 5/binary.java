@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class binary
 {
@@ -17,18 +18,9 @@ public class binary
 			array[i]=sc.nextInt();
 		}
 		System.out.println();
-		for(i=0;i<limit-1;i++)
-		{
-			for(j=i+1;j<limit;j++)
-			{
-				if(array[i]>array[j])
-				{
-					temp=array[i];
-					array[i]=array[j];
-					array[j]=temp;
-				}
-			}
-		}
+		Arrays.sort(array);
+		
+		
 		System.out.println("Array after sorted");
 		for(i=0;i<limit;i++)
 		{
