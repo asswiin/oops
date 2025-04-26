@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class binary {
+class Abinary {
     void define(int arr[], int n, int item) {
         Arrays.sort(arr);
         int result = Arrays.binarySearch(arr, item);
@@ -14,7 +14,7 @@ class binary {
     public static void main(String args[]) {
         int n, item, i;
         Scanner sc = new Scanner(System.in);
-        Binaryarray bin = new Binaryarray();
+        Abinary bin = new Abinary();
         System.out.print("\nEnter the number of elements : ");
         n = sc.nextInt();
         int[] arr = new int[n];
