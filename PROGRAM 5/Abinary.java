@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Abinary {
     void define(int arr[], int n, int item) {
         Arrays.sort(arr);
-        int result = Arrays.binarySearch(arr, item);
+        int result = Arrays.binarySearch(arr, item); 
         if (result >= 0) {
             System.out.println("\nItem found at position: " + (result + 1));
         } else {
